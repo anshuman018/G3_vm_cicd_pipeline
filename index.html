@@ -3,13 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🤣 Totally Professional Website 🤣</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            text-align: center;
+            padding: 50px;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            font-size: 3em;
+            animation: bounce 1s infinite;
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .joke {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            font-size: 1.2em;
+        }
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .emoji {
+            font-size: 4em;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <h1>Modified page of CICD Pipeline</h1>
-    <p>This is a simple HTML document.</p>
-   
-    
+    <h1>🎉 Welcome to the CICD Comedy Club! 🎉</h1>
+    <div class="emoji">😂</div>
+    <div class="joke">
+        <h2>Why do programmers prefer dark mode?</h2>
+        <p id="punchline" style="display:none;">Because light attracts bugs! 🐛</p>
+    </div>
+    <button onclick="document.getElementById('punchline').style.display='block'; this.style.display='none';">
+        Click for the Punchline! 🥁
+    </button>
+    <div class="joke">
+        <p><strong>CI/CD Joke:</strong></p>
+        <p>My code works perfectly...</p>
+        <p>...in the pipeline of my dreams! 💭</p>
+    </div>
+    <p style="color: white; font-size: 1.5em; margin-top: 50px;">
+        ⚠️ Warning: This page contains 100% dad jokes and Comic Sans ⚠️
+    </p>
 </body>
 </html>
